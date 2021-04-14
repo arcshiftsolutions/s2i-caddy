@@ -21,7 +21,7 @@ RUN apk update && \
         curl
 
 # Install Caddy Server, and All Middleware
-RUN curl -L "https://github.com/arcshiftsolutions/s2i-caddy/blob/master/openshift/caddy_v0.10.10_linux_amd64.tar.gz" \
+RUN curl -L "https://github.com/arcshiftsolutions/s2i-caddy/blob/master/openshift/caddy_v0.10.10_linux_amd64.tar.gz?raw=true" \
     | tar --no-same-owner -C /usr/bin/ -xz caddy
 
 # Remove build devs
